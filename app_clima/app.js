@@ -17,9 +17,8 @@ window.addEventListener('load',()=>{
             lon = posicion.coords.longitude
             lat = posicion.coords.latitude
 
-            //const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=3b603bd32098614a8e2fc09325bbe026`
-
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=Bilbao&lang='ES'&appid=3b603bd32098614a8e2fc09325bbe026`
+            
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=Bilbao&lang=es&units=metric&appid=3b603bd32098614a8e2fc09325bbe026`
             console.log(url);
 
             fetch(url)
